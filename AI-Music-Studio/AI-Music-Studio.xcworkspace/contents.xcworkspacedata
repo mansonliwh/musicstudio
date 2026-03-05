@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "self:">
+   </FileRef>
+   <FileRef
+      location = "group:AI-Music-Studio.xcodeproj">
+   </FileRef>
+</Workspace>

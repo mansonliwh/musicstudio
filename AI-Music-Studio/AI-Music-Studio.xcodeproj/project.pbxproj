@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B001000000000000000001 /* AI_Music_StudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000001 /* AI_Music_StudioApp.swift */; };
+		B001000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000002 /* ContentView.swift */; };
+		B001000000000000000003 /* SongGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000003 /* SongGeneratorView.swift */; };
+		B001000000000000000004 /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000004 /* VoiceRecorderView.swift */; };
+		B001000000000000000005 /* VoiceClonerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000005 /* VoiceClonerView.swift */; };
+		B001000000000000000006 /* MusicLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000006 /* MusicLibraryView.swift */; };
+		B001000000000000000007 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000007 /* SettingsView.swift */; };
+		B001000000000000000008 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000008 /* AudioPlayerView.swift */; };
+		B001000000000000000009 /* SongGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000009 /* SongGeneratorViewModel.swift */; };
+		B00100000000000000000A /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000A /* VoiceRecorderViewModel.swift */; };
+		B00100000000000000000B /* VoiceClonerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000B /* VoiceClonerViewModel.swift */; };
+		B00100000000000000000C /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000C /* AudioRecorder.swift */; };
+		B00100000000000000000D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000D /* AudioPlayer.swift */; };
+		B00100000000000000000E /* MP3Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000E /* MP3Exporter.swift */; };
+		B00100000000000000000F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000F /* APIClient.swift */; };
+		B001000000000000000010 /* MusicGenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000010 /* MusicGenService.swift */; };
+		B001000000000000000011 /* RVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000011 /* RVCService.swift */; };
+		B001000000000000000012 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000012 /* Song.swift */; };
+		B001000000000000000013 /* VoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000013 /* VoiceModel.swift */; };
+		B001000000000000000014 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000014 /* APIConfig.swift */; };
+		B001000000000000000015 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000015 /* KeychainHelper.swift */; };
+		B001000000000000000016 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000016 /* AudioManager.swift */; };
+		B001000000000000000017 /* Color+Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000017 /* Color+Platform.swift */; };
+		B001000000000000000018 /* ExportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000018 /* ExportHelper.swift */; };
+		B001000000000000000019 /* SunoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000001A /* SunoService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		T001000000000000000001 /* AI Music Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Music Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F001000000000000000001 /* AI_Music_StudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_Music_StudioApp.swift; sourceTree = "<group>"; };
+		F001000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F001000000000000000003 /* SongGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGeneratorView.swift; sourceTree = "<group>"; };
+		F001000000000000000004 /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
+		F001000000000000000005 /* VoiceClonerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceClonerView.swift; sourceTree = "<group>"; };
+		F001000000000000000006 /* MusicLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLibraryView.swift; sourceTree = "<group>"; };
+		F001000000000000000007 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F001000000000000000008 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		F001000000000000000009 /* SongGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGeneratorViewModel.swift; sourceTree = "<group>"; };
+		F00100000000000000000A /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
+		F00100000000000000000B /* VoiceClonerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceClonerViewModel.swift; sourceTree = "<group>"; };
+		F00100000000000000000C /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		F00100000000000000000D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		F00100000000000000000E /* MP3Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP3Exporter.swift; sourceTree = "<group>"; };
+		F00100000000000000000F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F001000000000000000010 /* MusicGenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicGenService.swift; sourceTree = "<group>"; };
+		F001000000000000000011 /* RVCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVCService.swift; sourceTree = "<group>"; };
+		F001000000000000000012 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		F001000000000000000013 /* VoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceModel.swift; sourceTree = "<group>"; };
+		F001000000000000000014 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		F001000000000000000015 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		F001000000000000000016 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		F001000000000000000017 /* Color+Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Platform.swift"; sourceTree = "<group>"; };
+		F001000000000000000018 /* ExportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportHelper.swift; sourceTree = "<group>"; };
+		F001000000000000000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00100000000000000001A /* SunoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunoService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E001000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G001000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G001000000000000000002 /* AI-Music-Studio */,
+				G00100000000000000000C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G00100000000000000000C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				T001000000000000000001 /* AI Music Studio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G001000000000000000002 /* AI-Music-Studio */ = {
+			isa = PBXGroup;
+			children = (
+				G001000000000000000003 /* App */,
+				G001000000000000000004 /* Views */,
+				G001000000000000000005 /* ViewModels */,
+				G001000000000000000006 /* Services */,
+				G001000000000000000007 /* Models */,
+				G001000000000000000008 /* Utils */,
+				G001000000000000000009 /* Resources */,
+			);
+			path = "AI-Music-Studio";
+			sourceTree = "<group>";
+		};
+		G001000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F001000000000000000001 /* AI_Music_StudioApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G001000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F001000000000000000002 /* ContentView.swift */,
+				F001000000000000000003 /* SongGeneratorView.swift */,
+				F001000000000000000004 /* VoiceRecorderView.swift */,
+				F001000000000000000005 /* VoiceClonerView.swift */,
+				F001000000000000000006 /* MusicLibraryView.swift */,
+				F001000000000000000007 /* SettingsView.swift */,
+				F001000000000000000008 /* AudioPlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G001000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F001000000000000000009 /* SongGeneratorViewModel.swift */,
+				F00100000000000000000A /* VoiceRecorderViewModel.swift */,
+				F00100000000000000000B /* VoiceClonerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G001000000000000000006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				G00100000000000000000A /* Audio */,
+				G00100000000000000000B /* AI */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		G001000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F001000000000000000012 /* Song.swift */,
+				F001000000000000000013 /* VoiceModel.swift */,
+				F001000000000000000014 /* APIConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G001000000000000000008 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F001000000000000000015 /* KeychainHelper.swift */,
+				F001000000000000000016 /* AudioManager.swift */,
+				F001000000000000000017 /* Color+Platform.swift */,
+				F001000000000000000018 /* ExportHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		G001000000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F001000000000000000019 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G00100000000000000000A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000C /* AudioRecorder.swift */,
+				F00100000000000000000D /* AudioPlayer.swift */,
+				F00100000000000000000E /* MP3Exporter.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		G00100000000000000000B /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000F /* APIClient.swift */,
+				F001000000000000000010 /* MusicGenService.swift */,
+				F001000000000000000011 /* RVCService.swift */,
+				F00100000000000000001A /* SunoService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		N001000000000000000001 /* AI Music Studio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C001000000000000000002 /* Build configuration list for PBXNativeTarget "AI Music Studio" */;
+			buildPhases = (
+				B002000000000000000001 /* Sources */,
+				E001000000000000000001 /* Frameworks */,
+				R001000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AI Music Studio";
+			productName = "AI Music Studio";
+			productReference = T001000000000000000001 /* AI Music Studio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P001000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = C001000000000000000001 /* Build configuration list for PBXProject "AI-Music-Studio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = G001000000000000000001;
+			productRefGroup = G00100000000000000000C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				N001000000000000000001 /* AI Music Studio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R001000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B002000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B001000000000000000001 /* AI_Music_StudioApp.swift in Sources */,
+				B001000000000000000002 /* ContentView.swift in Sources */,
+				B001000000000000000003 /* SongGeneratorView.swift in Sources */,
+				B001000000000000000004 /* VoiceRecorderView.swift in Sources */,
+				B001000000000000000005 /* VoiceClonerView.swift in Sources */,
+				B001000000000000000006 /* MusicLibraryView.swift in Sources */,
+				B001000000000000000007 /* SettingsView.swift in Sources */,
+				B001000000000000000008 /* AudioPlayerView.swift in Sources */,
+				B001000000000000000009 /* SongGeneratorViewModel.swift in Sources */,
+				B00100000000000000000A /* VoiceRecorderViewModel.swift in Sources */,
+				B00100000000000000000B /* VoiceClonerViewModel.swift in Sources */,
+				B00100000000000000000C /* AudioRecorder.swift in Sources */,
+				B00100000000000000000D /* AudioPlayer.swift in Sources */,
+				B00100000000000000000E /* MP3Exporter.swift in Sources */,
+				B00100000000000000000F /* APIClient.swift in Sources */,
+				B001000000000000000010 /* MusicGenService.swift in Sources */,
+				B001000000000000000011 /* RVCService.swift in Sources */,
+				B001000000000000000012 /* Song.swift in Sources */,
+				B001000000000000000013 /* VoiceModel.swift in Sources */,
+				B001000000000000000014 /* APIConfig.swift in Sources */,
+				B001000000000000000015 /* KeychainHelper.swift in Sources */,
+				B001000000000000000016 /* AudioManager.swift in Sources */,
+				B001000000000000000017 /* Color+Platform.swift in Sources */,
+				B001000000000000000018 /* ExportHelper.swift in Sources */,
+				B001000000000000000019 /* SunoService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C001000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = auto;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C001000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = auto;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C001000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "AI-Music-Studio/Resources/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aimusicstudio.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		C001000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "AI-Music-Studio/Resources/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aimusicstudio.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C001000000000000000001 /* Build configuration list for PBXProject "AI-Music-Studio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C001000000000000000003 /* Debug */,
+				C001000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C001000000000000000002 /* Build configuration list for PBXNativeTarget "AI Music Studio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C001000000000000000005 /* Debug */,
+				C001000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P001000000000000000001 /* Project object */;
+}

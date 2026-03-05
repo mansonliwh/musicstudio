@@ -1,0 +1,134 @@
+{
+  "project_name": "AI-Music-Studio",
+  "description": "一款强大的Mac原生AI音乐创作工具，支持AI写歌、声音克隆和AI翻唱功能",
+  "tech_stack": ["SwiftUI", "AVFoundation", "URLSession", "Combine", "KeychainAccess"],
+  "features": [
+    {
+      "id": "feat_001",
+      "category": "functional",
+      "description": "AI写歌功能 - 基于文本描述生成独特音乐",
+      "steps": [
+        "用户输入文本描述",
+        "调用 MusicGen API 生成音乐",
+        "返回生成的音频文件"
+      ],
+      "passes": false,
+      "priority": 1,
+      "notes": "核心功能，使用 Meta AI 的 MusicGen 模型"
+    },
+    {
+      "id": "feat_002",
+      "category": "functional",
+      "description": "声音录入功能 - 录制并训练专属声音模型",
+      "steps": [
+        "使用 AVFoundation 录制用户声音",
+        "上传音频样本到 RVC 服务",
+        "训练并保存声音模型"
+      ],
+      "passes": false,
+      "priority": 2,
+      "notes": "使用 RVC 模型进行声音克隆"
+    },
+    {
+      "id": "feat_003",
+      "category": "functional",
+      "description": "AI翻唱功能 - 使用克隆声音进行翻唱",
+      "steps": [
+        "选择要翻唱的歌曲",
+        "选择已训练的声音模型",
+        "生成翻唱版本"
+      ],
+      "passes": false,
+      "priority": 2,
+      "notes": "结合 MusicGen 和 RVC 实现"
+    },
+    {
+      "id": "feat_004",
+      "category": "functional",
+      "description": "音乐库管理 - 管理所有生成的音乐",
+      "steps": [
+        "展示所有生成的音乐列表",
+        "支持播放、删除、重命名",
+        "分类管理"
+      ],
+      "passes": false,
+      "priority": 3,
+      "notes": "本地数据持久化"
+    },
+    {
+      "id": "feat_005",
+      "category": "functional",
+      "description": "MP3导出功能 - 导出高质量音频文件",
+      "steps": [
+        "选择要导出的音乐",
+        "选择导出格式和质量",
+        "保存到本地文件系统"
+      ],
+      "passes": false,
+      "priority": 3,
+      "notes": "支持多种音频格式"
+    },
+    {
+      "id": "feat_006",
+      "category": "api",
+      "description": "API配置管理 - Replicate 和 HuggingFace API 集成",
+      "steps": [
+        "设置页面配置 API Key",
+        "使用 Keychain 安全存储密钥",
+        "支持多个 API 提供商切换"
+      ],
+      "passes": false,
+      "priority": 1,
+      "notes": "密钥使用 KeychainAccess 库安全存储"
+    },
+    {
+      "id": "feat_007",
+      "category": "ui",
+      "description": "SwiftUI 用户界面",
+      "steps": [
+        "主界面布局",
+        "各功能模块导航",
+        "响应式设计适配不同窗口大小"
+      ],
+      "passes": false,
+      "priority": 2,
+      "notes": "使用 SwiftUI 实现原生 macOS 界面"
+    },
+    {
+      "id": "feat_008",
+      "category": "testing",
+      "description": "单元测试和 UI 测试",
+      "steps": [
+        "Services 层单元测试",
+        "ViewModels 测试",
+        "UI 自动化测试"
+      ],
+      "passes": false,
+      "priority": 4,
+      "notes": "使用 XCTest 框架"
+    }
+  ],
+  "api_config": {
+    "replicate": {
+      "base_url": "https://api.replicate.com/v1",
+      "models": ["musicgen", "rvc"]
+    },
+    "huggingface": {
+      "base_url": "https://api-inference.huggingface.co/models",
+      "models": ["musicgen"]
+    },
+    "local": {
+      "musicgen_url": "http://localhost:8000",
+      "rvc_url": "http://localhost:8001"
+    }
+  },
+  "project_structure": {
+    "App": "应用入口",
+    "Views": "SwiftUI 视图",
+    "ViewModels": "视图模型",
+    "Services": "服务层（Audio/AI）",
+    "Models": "数据模型",
+    "Utils": "工具类",
+    "Resources": "资源文件"
+  }
+}
