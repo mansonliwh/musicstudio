@@ -1,0 +1,22 @@
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+
+# Build
+.build/
+DerivedData/
+Build/
+
+# macOS
+.DS_Store
+*.swp
+*~.nib
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Temporary files
+*.tmp
+*.temp

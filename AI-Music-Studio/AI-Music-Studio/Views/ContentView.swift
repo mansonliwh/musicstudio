@@ -105,7 +105,7 @@ struct ContentView: View {
                     .font(.system(size: 12))
                     .foregroundColor(.secondary)
                 Spacer()
-                Text(appState.selectedProvider.rawValue)
+                Text("Replicate")
                     .font(.system(size: 10, weight: .medium))
                     .foregroundColor(.accentColor)
                     .padding(.horizontal, 6)

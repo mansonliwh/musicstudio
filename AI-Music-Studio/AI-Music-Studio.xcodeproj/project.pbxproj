@@ -22,7 +22,6 @@
 		B00100000000000000000D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000D /* AudioPlayer.swift */; };
 		B00100000000000000000E /* MP3Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000E /* MP3Exporter.swift */; };
 		B00100000000000000000F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000F /* APIClient.swift */; };
-		B001000000000000000010 /* MusicGenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000010 /* MusicGenService.swift */; };
 		B001000000000000000011 /* RVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000011 /* RVCService.swift */; };
 		B001000000000000000012 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000012 /* Song.swift */; };
 		B001000000000000000013 /* VoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000013 /* VoiceModel.swift */; };
@@ -31,7 +30,7 @@
 		B001000000000000000016 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000016 /* AudioManager.swift */; };
 		B001000000000000000017 /* Color+Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000017 /* Color+Platform.swift */; };
 		B001000000000000000018 /* ExportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001000000000000000018 /* ExportHelper.swift */; };
-		B001000000000000000019 /* SunoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000001A /* SunoService.swift */; };
+		B00100000000000000001B /* ReplicateMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000001B /* ReplicateMusicService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +50,8 @@
 		F00100000000000000000D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		F00100000000000000000E /* MP3Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP3Exporter.swift; sourceTree = "<group>"; };
 		F00100000000000000000F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		F001000000000000000010 /* MusicGenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicGenService.swift; sourceTree = "<group>"; };
 		F001000000000000000011 /* RVCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVCService.swift; sourceTree = "<group>"; };
+		F00100000000000000001B /* ReplicateMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateMusicService.swift; sourceTree = "<group>"; };
 		F001000000000000000012 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		F001000000000000000013 /* VoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceModel.swift; sourceTree = "<group>"; };
 		F001000000000000000014 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
@@ -61,7 +60,6 @@
 		F001000000000000000017 /* Color+Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Platform.swift"; sourceTree = "<group>"; };
 		F001000000000000000018 /* ExportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportHelper.swift; sourceTree = "<group>"; };
 		F001000000000000000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F00100000000000000001A /* SunoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,9 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				F00100000000000000000F /* APIClient.swift */,
-				F001000000000000000010 /* MusicGenService.swift */,
 				F001000000000000000011 /* RVCService.swift */,
-				F00100000000000000001A /* SunoService.swift */,
+				F00100000000000000001B /* ReplicateMusicService.swift */,
 			);
 			path = AI;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 				B00100000000000000000D /* AudioPlayer.swift in Sources */,
 				B00100000000000000000E /* MP3Exporter.swift in Sources */,
 				B00100000000000000000F /* APIClient.swift in Sources */,
-				B001000000000000000010 /* MusicGenService.swift in Sources */,
 				B001000000000000000011 /* RVCService.swift in Sources */,
 				B001000000000000000012 /* Song.swift in Sources */,
 				B001000000000000000013 /* VoiceModel.swift in Sources */,
@@ -284,7 +280,7 @@
 				B001000000000000000016 /* AudioManager.swift in Sources */,
 				B001000000000000000017 /* Color+Platform.swift in Sources */,
 				B001000000000000000018 /* ExportHelper.swift in Sources */,
-				B001000000000000000019 /* SunoService.swift in Sources */,
+				B00100000000000000001B /* ReplicateMusicService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

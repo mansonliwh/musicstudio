@@ -196,7 +196,7 @@ struct VoiceClonerView: View {
             
             HStack(spacing: 16) {
                 Button(action: {
-                    viewModel.convertVoice(apiKey: appState.apiKey, provider: appState.selectedProvider)
+                    viewModel.convertVoice(apiKey: appState.apiKey)
                 }) {
                     HStack {
                         Image(systemName: "waveform.path.ecg")

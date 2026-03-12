@@ -84,21 +84,20 @@ class VoiceRecorderViewModel: ObservableObject {
         statusMessage = "录制完成"
     }
     
-    func trainVoiceModel(apiKey: String, provider: APIProvider) {
+    func trainVoiceModel(apiKey: String) {
         guard canTrain, let audioURL = recordedFileURL else { return }
-        
+
         isTraining = true
         trainingProgress = 0
         statusMessage = "正在训练声音模型..."
         errorMessage = nil
-        
+
         let name = voiceName.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+
         rvcService.cloneVoice(
             audioFileURL: audioURL,
             outputName: name,
             apiKey: apiKey,
-            provider: provider,
             progress: { status, prog in
                 DispatchQueue.main.async {
                     self.statusMessage = status

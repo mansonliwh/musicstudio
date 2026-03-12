@@ -186,7 +186,7 @@ struct VoiceRecorderView: View {
                     }
                     
                     Button(action: {
-                        viewModel.trainVoiceModel(apiKey: appState.apiKey, provider: appState.selectedProvider)
+                        viewModel.trainVoiceModel(apiKey: appState.apiKey)
                     }) {
                         HStack {
                             Image(systemName: "sparkles")

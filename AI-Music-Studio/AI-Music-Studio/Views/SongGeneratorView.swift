@@ -250,7 +250,7 @@ struct SongGeneratorView: View {
             
             HStack(spacing: 16) {
                 Button(action: {
-                    viewModel.generateSong(apiKey: appState.apiKey, provider: appState.selectedProvider)
+                    viewModel.generateSong(apiKey: appState.apiKey)
                 }) {
                     HStack {
                         Image(systemName: "sparkles")

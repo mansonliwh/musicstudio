@@ -22,22 +22,21 @@ class VoiceClonerViewModel: ObservableObject {
         selectedVoiceModel != nil && sourceAudioURL != nil && !isConverting
     }
     
-    func convertVoice(apiKey: String, provider: APIProvider) {
+    func convertVoice(apiKey: String) {
         guard canConvert,
               let voiceModel = selectedVoiceModel,
               let sourceURL = sourceAudioURL else { return }
-        
+
         isConverting = true
         progress = 0
         statusMessage = "正在准备声音转换..."
         errorMessage = nil
-        
+
         rvcService.convertVoice(
             sourceAudioURL: sourceURL,
             voiceModel: voiceModel,
             pitch: selectedPitch,
             apiKey: apiKey,
-            provider: provider,
             progress: { status, prog in
                 DispatchQueue.main.async {
                     self.statusMessage = status
